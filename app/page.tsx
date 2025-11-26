@@ -1,15 +1,17 @@
-import data from '../initial_state.json'
-import Card from './components/card'
 
+import Card from './components/card';
+import { queryDatabase } from '../utils/db';
 
-export default function CardGrid() {
+export default async function CardGrid() {
+  const stars = await queryDatabase('SELECT * FROM stars');
+
   return (
     <main>
       <div className='h2-text'>
         <h2>click on a star to read more!</h2>
       </div>
       <div className='grid'>
-        {data.map(item => (
+        {stars.map(item => (
           <Card
             key={item.id}
             id={item.id}
