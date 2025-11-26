@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "name": "Proxima Centauri",
+    "type": "Star",
+    "distance": 4.24,
+    "discoveryDate": "1915-01-01",
+    "description": "A small, low-mass star located 4.2465 light-years away from the Sun in the southern constellation of Centaurus.",
+    "spectralColor": "#FF5733",
+    "magnitude": 11.13,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qh13nRLlmeBMCnlUFKBskAqEx_Q-lOpqr6aUF1jQKiKXMnA6AEQpjypqBDy-qSVhSvAw3nXadGB3uYzhBnx6wNKxwjMVUrLvfcCwDbPQ&s=10"
+  },
+  {
+    "id": "2",
+    "name": "Betelgeuse",
+    "type": "Star",
+    "distance": 642.5,
+    "discoveryDate": "1836-01-01",
+    "description": "A red supergiant of spectral type M1-2 and one of the largest visible stars to the naked eye.",
+    "spectralColor": "#FF4500",
+    "magnitude": 0.5,
+    "image": "https://www.adlerplanetarium.org/wp-content/uploads/Spotty-Surface-of-Betelgeuse.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Kepler-186f",
+    "type": "Planet",
+    "distance": 582.0,
+    "discoveryDate": "2014-04-17",
+    "description": "An exoplanet orbiting the red dwarf Kepler-186, about 580 light-years from Earth. It is the first planet with a radius similar to Earth's.",
+    "spectralColor": "#2E86C1",
+    "magnitude": 14.0,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLqxfUU35MY8E-vt462AI3UBUO7LIoT0qlHrmCsbuGiCOJEITzZ-e4u5X1N0Nlekk2O9Rof4F7n3xx_eDyZj2X9qk7gJayKw7_U2-3w&s=10"
+  },
+  {
+    "id": "4",
+    "name": "Orion Nebula",
+    "type": "Nebula",
+    "distance": 1344.0,
+    "discoveryDate": "1610-11-26",
+    "description": "A diffuse nebula situated in the Milky Way, being south of Orion's Belt in the constellation of Orion.",
+    "spectralColor": "#8E44AD",
+    "magnitude": 4.0,
+    "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/streams/2013/November/131115/2D9697486-131115-orion1photo-hmed-1000a-files.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Sirius A",
+    "type": "Star",
+    "distance": 8.6,
+    "discoveryDate": "0001-01-01",
+    "description": "The brightest star in the night sky. Sirius A is part of the binary star system Sirius, and it is the larger and more luminous of the two.",
+    "spectralColor": "#A9D0F5",
+    "magnitude": -1.46,
+    "image": "https://www.star-facts.com/wp-content/uploads/2019/09/Sirius-star.webp"
+  }
+]

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import "tailwindcss";
+
+.font-cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
+body {
+  background-color: #2c272bff;
+}
+
+.h2-text {
+  margin: 0px 20px 20px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 4rem;
+  color: #4ECCA3;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 40%; 
+  margin: 0 auto;
+}
+
+.p-text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #4ECCA3;
+    font-family: 'Indie Flower', cursive;
+}
