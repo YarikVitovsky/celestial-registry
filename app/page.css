@@ -1,0 +1,44 @@
+
+.apps {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 40%; 
+  margin: 0 auto;
+}
+
+.density_medium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 25%;
+  margin: 0 0 4rem 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.icon-button {
+  position: absolute;
+  top: 15rem;
+  right: 6rem;
+  cursor: pointer;
+  transform: scale(2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.icon-button:hover {
+  background-color: #f0f0f0;
+}
