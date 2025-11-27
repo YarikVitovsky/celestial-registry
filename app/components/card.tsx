@@ -10,9 +10,10 @@ interface CardProps {
     title: string;
     image: string;
     type: string;
+    color: string
 }
 
-export default function Card({ id, title, image, type }: CardProps) {
+export default function Card({ id, title, image, type, color }: CardProps) {
 
     return (
         
@@ -22,7 +23,7 @@ export default function Card({ id, title, image, type }: CardProps) {
                     <img src={image} alt={type} className='card-image' />
                 </div>
                 <div>
-                    <p className='p-text'>
+                    <p className='p-text' style={{color}}>
                         {title}
                     </p>
                 </div>
