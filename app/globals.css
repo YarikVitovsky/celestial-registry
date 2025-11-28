@@ -9,7 +9,17 @@ body {
   background-color: #2c272bff;
 }
 
-.h2-text {
+.header-text {
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+
+
+ /* ----------------------main page---------------------- */
+
+ .h2-text {
   margin: 0px 20px 20px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
@@ -19,14 +29,141 @@ body {
   justify-content: center;
 }
 
-.p-text {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    font-size: 1.5rem;
-    color: #4ECCA3;
-    font-family: 'Indie Flower', cursive;
+.apps {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 40%; 
+  margin: 0 auto;
+
+  .card {
+      background-color: #2c272bff;
+      border-radius: 2rem;
+      height: 12rem;
+      width: 16rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem 0 1rem 0;
+  }
+
+  .card-title {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #4ECCA3;
+      font-family: 'Indie Flower', cursive;
+  }
+
+  .card-description {
+    display: none;
+  }
+
+  .card-image {
+      height: 10rem;
+      width: auto;
+      border-radius: 2rem;
+  }
+
 }
 
+.density_medium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 25%;
+  margin: 0 0 4rem 0;
 
+  .card {
+      background-color: #2c272bff;
+      border-radius: 2rem;
+      height: 10rem;
+      width: 64rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 1rem 0 1rem 0;
+  }
 
+  .card-title {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #4ECCA3;
+      font-family: 'Indie Flower', cursive;
+      margin: 1rem 0 0 1rem;
+  }
+
+  .card-description {
+    color: white;
+    flex-wrap: wrap;
+    margin: 0 0 0 1rem;
+    padding-left: 10px;
+  }
+
+  .card-image {
+      height: 10rem;
+      width: auto;
+      border-radius: 2rem;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.icon-button {
+  position: absolute;
+  top: 15rem;
+  right: 6rem;
+  cursor: pointer;
+  transform: scale(2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  color: #4ECCA3;
+}
+
+.icon-button:hover {
+  background-color: #313131ff;
+}
+
+/* ----------------------star page---------------------- */
+
+.star-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.star-image {
+  border-radius: 2rem;
+}
+
+.star-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 36rem;
+  font-size: 1.5rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+  padding: 1rem;
+}

@@ -1,8 +1,8 @@
 'use client'
 
-import './card.css'
 import Link from 'next/link'
 import Image from 'next/image'
+
 
 
 interface CardProps {
@@ -10,10 +10,11 @@ interface CardProps {
     title: string;
     image: string;
     type: string;
-    color: string
+    color: string;
+    description: string;
 }
 
-export default function Card({ id, title, image, type, color }: CardProps) {
+export default function Card({ id, title, image, type, color, description }: CardProps) {
 
     return (
         
@@ -23,8 +24,11 @@ export default function Card({ id, title, image, type, color }: CardProps) {
                     <img src={image} alt={type} className='card-image' />
                 </div>
                 <div>
-                    <p className='p-text' style={{color}}>
+                    <h3 className='card-title' style={{color}}>
                         {title}
+                    </h3>
+                    <p className='card-description'>
+                        {description}
                     </p>
                 </div>
             </div>

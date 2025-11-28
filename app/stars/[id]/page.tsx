@@ -12,13 +12,17 @@ export default async function StarDetails({ params }: { params: { id: string } }
     }
 
     return (
-        <div className='p-text flex flex-col min-h-screen space-y-4 pb-10'>
-            <img src={star.image} alt={star.type} className='rounded-4xl' />
-            <p style={{ color: star.spectralColor }}>{star.name}</p>
-            <p>{star.distance} light-years</p>
-            <p>Discovered on: {star.discoveryDate}</p>
-            <p className='max-w-xl'>{star.description}</p>
-            <p>Magnitude: {star.magnitude}</p>
+        <div className='star-page'>
+            <div>
+                <img className='star-image' src={star.image} alt={star.type}/>
+            </div>
+            <div className='star-details'>
+                <p style={{ color: star.spectralColor }} className='text-4xl p-5'>{star.name}</p>
+                <p>{star.distance} light-years</p>
+                <p>Discovered on: {star.discoveryDate}</p>
+                <p>{star.description}</p>
+                <p>Magnitude: {star.magnitude}</p>
+            </div>
         </div>
     );
 }

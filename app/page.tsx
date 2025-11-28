@@ -4,7 +4,6 @@
 import Card from './components/card';
 import { useState } from 'react'
 import data from '../initial_state.json'
-import './page.css'
 
 
 export default function CardGrid() {
@@ -34,6 +33,7 @@ export default function CardGrid() {
             image={item.image}
             type={item.type}
             color={item.spectralColor}
+            description={item.description}
           />
         ))}
       </div>
