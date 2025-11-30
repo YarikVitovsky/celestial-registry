@@ -1,14 +1,37 @@
 'use client'
 
-// import { queryDatabase } from '../utils/db';
 import Card from './components/card';
-import { useState } from 'react'
-import data from '../initial_state.json'
+import { useState, useEffect } from 'react'
 
+
+interface Star {
+  id: string;
+  name: string;
+  image: string;
+  type: string;
+  spectralColor: string;
+  description: string;
+}
 
 export default function CardGrid() {
 
   const [viewMode, setViewMode] = useState('apps')
+  const [stars, setStars] = useState<Star[]>([])
+
+  useEffect(() => {
+    const fetchStars = async () => {
+      try {
+        const response = await fetch('/api/stars')
+        const data: Star[] = await response.json()
+        setStars(data)
+      } catch (error) {
+        console.error('Error fetching stars:', error)
+      }
+    }
+
+    fetchStars()
+  }, [])
+
 
   const toggleViewMode = () => {
     setViewMode((prevMode) => (prevMode === 'apps' ? 'density_medium' : 'apps'))
@@ -25,7 +48,7 @@ export default function CardGrid() {
         <h2>click on a star to read more!</h2>
       </div>
       <div className={viewMode}>
-        {data.map(item => (
+        {stars.map(item => (
           <Card
             key={item.id}
             id={item.id}

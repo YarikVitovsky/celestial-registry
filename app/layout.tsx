@@ -1,12 +1,13 @@
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import initDb from "@/utils/initDb";
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+
+export default async function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
+  
+  await initDb();
+
   return (
     <html lang="en">
       <head>
