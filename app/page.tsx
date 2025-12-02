@@ -9,7 +9,7 @@ interface Star {
   name: string;
   image: string;
   type: string;
-  spectralColor: string;
+  spectralcolor: string;
   description: string;
 }
 
@@ -37,11 +37,20 @@ export default function CardGrid() {
     setViewMode((prevMode) => (prevMode === 'apps' ? 'density_medium' : 'apps'))
   }
 
+  const handleClick = () => {
+    
+  }
+
   return (
     <main>
-      <button className='icon-button' onClick={toggleViewMode}>
+      <button className='view-mode button' onClick={toggleViewMode}>
         <span className="material-symbols-outlined">
           {viewMode}
+        </span>
+      </button>
+      <button className="add-new-star button" onClick={handleClick}>
+        <span className="material-symbols-outlined">
+          add
         </span>
       </button>
       <div className='h2-text'>
@@ -55,7 +64,7 @@ export default function CardGrid() {
             title={item.name}
             image={item.image}
             type={item.type}
-            color={item.spectralColor}
+            color={item.spectralcolor}
             description={item.description}
           />
         ))}

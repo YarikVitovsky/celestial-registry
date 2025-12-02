@@ -12,10 +12,26 @@ async function initDb() {
         if (count === 0) {
             console.log('database is empty')
 
-            const dbScriptPath = path.join(process.cwd(), 'db-script.sql');
-            const dbScript = fs.readFileSync(dbScriptPath, 'utf-8');
+            const initialStatePath = path.join(process.cwd(), 'initial_state.json');
+            const initialState = JSON.parse(fs.readFileSync(initialStatePath, 'utf-8'));
 
-            await client.query(dbScript)
+            for (const item of initialState) {
+                const query = `
+                    INSERT INTO stars (id, name, type, distance, discoverydate, description, spectralcolor, magnitude, image)
+                    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+                `;
+                await client.query(query, [
+                    item.id,
+                    item.name,
+                    item.type,
+                    item.distance,
+                    item.discoveryDate,
+                    item.description,
+                    item.spectralColor,
+                    item.magnitude,
+                    item.image,
+                ]);
+            }
 
             console.log('data populated')
         } else {

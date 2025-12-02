@@ -17,9 +17,9 @@ body {
 }
 
 
- /* ----------------------main page---------------------- */
+/* ----------------------main page---------------------- */
 
- .h2-text {
+.h2-text {
   margin: 0px 20px 20px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
@@ -34,28 +34,28 @@ body {
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  width: 40%; 
+  width: 40%;
   margin: 0 auto;
 
   .card {
-      background-color: #2c272bff;
-      border-radius: 2rem;
-      height: 12rem;
-      width: 16rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 1rem 0 1rem 0;
+    background-color: #2c272bff;
+    border-radius: 2rem;
+    height: 12rem;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
   }
 
   .card-title {
-      display: flex;
-      text-align: center;
-      align-items: center;
-      font-size: 1.5rem;
-      color: #4ECCA3;
-      font-family: 'Indie Flower', cursive;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #4ECCA3;
+    font-family: 'Indie Flower', cursive;
   }
 
   .card-description {
@@ -63,9 +63,9 @@ body {
   }
 
   .card-image {
-      height: 10rem;
-      width: auto;
-      border-radius: 2rem;
+    height: 10rem;
+    width: auto;
+    border-radius: 2rem;
   }
 
 }
@@ -79,25 +79,25 @@ body {
   margin: 0 0 4rem 0;
 
   .card {
-      background-color: #2c272bff;
-      border-radius: 2rem;
-      height: 10rem;
-      width: 64rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin: 1rem 0 1rem 0;
+    background-color: #2c272bff;
+    border-radius: 2rem;
+    height: 10rem;
+    width: 64rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem 0 1rem 0;
   }
 
   .card-title {
-      display: flex;
-      text-align: center;
-      align-items: center;
-      font-size: 1.5rem;
-      color: #4ECCA3;
-      font-family: 'Indie Flower', cursive;
-      margin: 1rem 0 0 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #4ECCA3;
+    font-family: 'Indie Flower', cursive;
+    margin: 1rem 0 0 1rem;
   }
 
   .card-description {
@@ -108,24 +108,22 @@ body {
   }
 
   .card-image {
-      height: 10rem;
-      width: auto;
-      border-radius: 2rem;
+    height: 10rem;
+    width: auto;
+    border-radius: 2rem;
   }
 }
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
 
-.icon-button {
+.button {
   position: absolute;
-  top: 15rem;
-  right: 6rem;
   cursor: pointer;
   transform: scale(2);
   display: flex;
@@ -137,9 +135,20 @@ body {
   color: #4ECCA3;
 }
 
-.icon-button:hover {
+.button:hover {
   background-color: #313131ff;
 }
+
+.view-mode {
+  top: 15rem;
+  right: 6rem;
+}
+
+.add-new-star {
+  top: 20rem;
+  right: 15rem;
+}
+
 
 /* ----------------------star page---------------------- */
 
